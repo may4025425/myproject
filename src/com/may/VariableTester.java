@@ -26,7 +26,7 @@ public class VariableTester {
         float f = 5.0f;
         int x = 5;
         int y = 3;
-        int z = (int)(f%y);//轉型(int)
+        int z = (int)(f%y);//頧��(int)
         System.out.println(z);
         System.out.println(x >> 1);
         x = x+1;
@@ -36,6 +36,14 @@ public class VariableTester {
         x = x+2;
         x += 2;
         System.out.println(x);
+        
+        
+        //字串轉整數
+        String data = "123";
+        int n = Integer.parseInt(data);
+        //整數轉字串
+        String mydata = String.valueOf(n);
+        
 	}
 
 }
