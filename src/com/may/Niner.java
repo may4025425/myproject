@@ -3,16 +3,15 @@ package com.may;
 public class Niner {
 
 	public static void main(String[] args) {
-		
-		for (int i = 1; i <= 9; i = i + 1) {
-			if ((2 * i) < 10) {
-				System.out.println("2 x " + i + " =  " + 2 * i);
-			} else {
-
-				System.out.println("2 x " + i + " = " + 2 * i);
-				
-		
+		for (int n = 1; n <= 9; n++) {
+			for (int i = 1; i <= 9; i++) {
+				if (n * i < 10) {
+					System.out.println(n + " x " + i + " =  " + n * i);
+				} else {
+					System.out.println(n + " x " + i + " = " + n * i);
+				}
 			}
+			System.out.println();// 跳一行
 		}
 
 	}
