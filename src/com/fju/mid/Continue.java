@@ -14,6 +14,7 @@ public class Continue {
 		while(n <= 13){
 			//System.out.print(n + " ");
 			if(n % 3 == 0){
+				n++;
 				continue;
 			}
 			System.out.print(n + " ");
