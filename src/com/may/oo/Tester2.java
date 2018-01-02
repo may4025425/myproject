@@ -13,4 +13,5 @@ public class Tester2 {
 	GraduateStudent gstu = new GraduateStudent();
 	gstu.print();
 }
+	
 }
