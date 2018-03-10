@@ -8,7 +8,7 @@ public class BookMember {
 	float discount;
 	protected int balance;
 	protected String email;
-	protected int phonenumber;
+	protected String phonenumber;
 	protected String address;
 
 	public BookMember( String name,String membershiptiers,int amount,int cost,float discount) {
@@ -18,10 +18,17 @@ public class BookMember {
 		this.cost = cost;
 		this.discount = discount;
 	}
+
+	public BookMember(String email,String phonenumber,String address) {
+		
+	}
 	
 	public void print1(){
 		int balance = (int)(amount-cost*(1-discount));
 		System.out.println("會員: " + name+ membershiptiers + "\t" + "購物金： " + amount+"\t"+"花費： "+cost+"\t"+"餘額： "+balance);
+	}
+	public void print2(){
+		System.out.println("會員信箱: " + email +"\t"+"手機號碼: "+phonenumber+ "\t" + "運送地址： "+address);
 	}
 
 

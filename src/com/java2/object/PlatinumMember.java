@@ -7,6 +7,14 @@ public class PlatinumMember extends BookMember {
 		super.discount = 0.7f;
 	}
 	
+	public PlatinumMember(String email,String phonenumber,String address) {
+		super(email, phonenumber, address);
+		super.email = "Idontknow@gmail.com";
+		super.phonenumber = "0914619076";
+		super.address = "台北市";
+		
+	}
+	
 	private int doublecoupon;
 	
 	@Override
@@ -15,4 +23,12 @@ public class PlatinumMember extends BookMember {
 		int balance = (int)(amount-cost*(1-discount));
 		System.out.println("會員: " + name+ membershiptiers + "\t" + "購物金： " + amount+"\t"+"花費： "+cost+"\t"+"餘額： "+(balance+doublecoupon));
 	}
+	@Override
+	public void print2(){
+		email = "Idontknow@gmail.com";
+		phonenumber = "0914619076";
+		address = "台北市";
+	System.out.println("會員信箱: " + email +"\t"+" 手機號碼: "+phonenumber+ "\t" + "運送地址： "+address+"\n");
+}
+
 }

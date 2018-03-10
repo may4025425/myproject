@@ -13,6 +13,7 @@ public class Main {
 		for(int i = 0; i<bm.size();i++){
 			BookMember b = bm.get(i);
 			b.print1();
+			b.print2();
 		}
 	}
 	
