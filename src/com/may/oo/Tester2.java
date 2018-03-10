@@ -10,8 +10,10 @@ public class Tester2 {
 	int avg = stu1.getAverage();
 	System.out.println(stu1.name+":"+avg);
 	Student.method();
-	GraduateStudent gstu = new GraduateStudent();
-	gstu.print();
+	//GraduateStudent gstu = new GraduateStudent();
+	
+	GraduateStudent gstu1 = new GraduateStudent("王曉明",55,66,77);
+	gstu1.print();
 }
 	
 }

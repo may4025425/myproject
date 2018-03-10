@@ -2,24 +2,34 @@ package com.may.oo;
 
 public class GraduateStudent extends Student {
 	int thesis;
-	public  GraduateStudent(){
-		
+	public  GraduateStudent(String name, int english,int math, int chinese){
 		super();//只能放在第一行,()代表建構子,super代表父類別
 	}
-	
-	//子類別是可以複寫父類別的東西的,這時候會有個防呆裝置"@Override",會幫你看你是否有複寫對
+	//子類別是可以複寫父類別的東西的,這時候會有個防呆裝置"@Override",會幫你看你是否有複寫對,主要是用來添加除了父類別以外的東西
 	//@的意思是"annotation標示"
 	
 	@Override
 	public void print(){
-		super.print();//"super."代表使用父類別中的屬性或方法,所以印出來的結果會先印出父類別的,再印出子類別的
+		//super.print();  再印一次父類別的print()
 		System.out.println(english + "\t"+math+"\t"+chinese+"\t"+thesis);
 		System.out.println(pass);
 	}
+	//"super."代表使用父類別中的屬性或方法,所以印出來的結果會先印出父類別的,再印出子類別的
 	@Override
 	public int getAverage(){
 		return(english + math + chinese+thesis)/4;
 	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	/*	
 	 	extends的意思相當於擴充或繼承(某類別)
@@ -39,11 +49,6 @@ public class GraduateStudent extends Student {
 		2018.1.2:Polymorphism多型
 				 Inheritance繼承
 				 Encapsulation封裝
-		
-		
-		
-		
-		
 		*/
 
 
