@@ -1,11 +1,21 @@
 package com.java2.object;
 
+import java.util.ArrayList;
+
 public class Main {
 
 	public static void main(String[] args) {
-		BookMember bm = new BookMember("王小明",300,100,"黃金卡會員",0.5f);
-		bm.print();
+		ArrayList<BookMember>bm = new ArrayList<>();
+		bm.add(new BookMember("林俊傑","（一般會員）",500,100,0.2f));
+		bm.add(new BookMember("周渝民","（黃金會員）",1000,500,0.5f));
+		bm.add(new BookMember("金城武","（白金會員）",3000,2000,0.7f));
+		bm.add(new BookMember("周杰倫","（鑽石會員）",100,150,0.9f));
+		for(int i = 0; i<bm.size();i++){
+			BookMember b = bm.get(i);
+			b.print1();
+		}
+		
 		
 	}
-
+	
 }
