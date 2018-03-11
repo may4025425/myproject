@@ -24,7 +24,7 @@ public class BookMember {
 	
 	public void print1(){
 		int balance = (int)(amount-cost*(1-discount));
-		System.out.println("會員: " + name+ membershiptiers + "\t" + "購物金： " + amount+"\t"+"花費： "+cost+"\t"+"餘額： "+balance);
+		System.out.println("會員: " + name+ membershiptiers + "\t" + "儲值金： " + amount+"\t"+"購物金額： "+cost+"\t"+"餘額： "+balance);
 	}
 	public void print2(){
 		System.out.println("會員信箱: " + email +"\t"+"手機號碼: "+phonenumber+ "\t" + "運送地址： "+address);

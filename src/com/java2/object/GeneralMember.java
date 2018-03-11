@@ -10,7 +10,7 @@ public class GeneralMember extends BookMember {
 	@Override
 	public void print1(){
 		int balance = (int)(amount-cost*(1-discount));
-		System.out.println("會員: " + name+ membershiptiers + "\t" + "購物金： " + amount+"\t"+"花費： "+cost+"\t"+"餘額： "+balance);
+		System.out.println("會員: " + name+ membershiptiers + "\t" + "購物金： " + amount+"\t"+"購物金額： "+cost+"\t"+" 餘額： "+balance);
 	}
 	@Override
 	public void print2(){
