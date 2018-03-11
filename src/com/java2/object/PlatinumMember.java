@@ -2,18 +2,11 @@ package com.java2.object;
 
 public class PlatinumMember extends BookMember {
 
-	public PlatinumMember(String name, String membershiptiers, int amount, int cost, float discount) {
-		super(name, membershiptiers, amount, cost, discount);
+	public PlatinumMember(String name, String membershiptiers, int amount, int cost, float discount,String email,String phonenumber,String address) {
+		super(name, membershiptiers, amount, cost, discount,email,phonenumber,address);
 		super.discount = 0.7f;
 	}
 	
-	public PlatinumMember(String email,String phonenumber,String address) {
-		super(email, phonenumber, address);
-		super.email = "Idontknow@gmail.com";
-		super.phonenumber = "0914619076";
-		super.address = "台北市";
-		
-	}
 	
 	private int doublecoupon;
 	
@@ -25,10 +18,11 @@ public class PlatinumMember extends BookMember {
 	}
 	@Override
 	public void print2(){
-		email = "Idontknow@gmail.com";
+		email =  "Idontknow@gmail.com";
 		phonenumber = "0914619076";
 		address = "台北市";
-	System.out.println("會員信箱: " + email +"\t"+" 手機號碼: "+phonenumber+ "\t" + "運送地址： "+address+"\n");
+		 
+	System.out.println("會員信箱: " + email+"\t"+" 手機號碼: "+phonenumber+ "\t" + "運送地址： "+address+"\n");
 }
 
 }

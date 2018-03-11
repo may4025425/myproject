@@ -2,19 +2,12 @@ package com.java2.object;
 
 public class GoldenMember extends BookMember {
 
-	public GoldenMember(String name, String membershiptiers, int amount, int cost, float discount) {
-		super(name, membershiptiers, amount, cost, discount);
+	public GoldenMember(String name, String membershiptiers, int amount, int cost, float discount,String email,String phonenumber,String address) {
+		super(name, membershiptiers, amount, cost, discount,email,phonenumber,address);
 		super.discount = 0.5f;
 
 	}
 	
-	public GoldenMember(String email,String phonenumber,String address) {
-		super(email, phonenumber, address);
-		super.email = "maybeyouknow@gmail.com";
-		super.phonenumber = "0924609806";
-		super.address = "台北市";
-		
-	}
 	
 	private int coupon;
 	

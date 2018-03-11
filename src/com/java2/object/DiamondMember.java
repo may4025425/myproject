@@ -2,17 +2,11 @@ package com.java2.object;
 
 public class DiamondMember extends BookMember {
 	
-	public DiamondMember(String name, String membershiptiers, int amount, int cost, float discount) {
-		super(name, membershiptiers, amount, cost, discount);
+	public DiamondMember(String name, String membershiptiers, int amount, int cost, float discount,String email,String phonenumber,String address) {
+		super(name, membershiptiers, amount, cost, discount,email,phonenumber,address);
 		super.discount = 0.9f;
 	}
 
-	public DiamondMember(String email,String phonenumber,String address) {
-		super(email, phonenumber, address);
-		super.email = "canyougiveme@gmail.com";
-		super.phonenumber = "0924619906";
-		super.address = "台北市";
-	}
 	
 	private int triplecoupon;
 	

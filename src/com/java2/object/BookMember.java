@@ -11,16 +11,15 @@ public class BookMember {
 	protected String phonenumber;
 	protected String address;
 
-	public BookMember( String name,String membershiptiers,int amount,int cost,float discount) {
+	public BookMember( String name,String membershiptiers,int amount,int cost,float discount,String email,String phonenumber,String address) {
 		this.name = name;
 		this.membershiptiers = membershiptiers;
 		this.amount = amount;
 		this.cost = cost;
 		this.discount = discount;
-	}
-
-	public BookMember(String email,String phonenumber,String address) {
-		
+		this.email = email;
+		this.phonenumber = phonenumber;
+		this.address = address;
 	}
 	
 	public void print1(){
