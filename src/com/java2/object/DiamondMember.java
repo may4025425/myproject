@@ -13,8 +13,13 @@ public class DiamondMember extends BookMember {
 	@Override
 	public void print1(){
 		 int triplecoupon = 1000;
+		 if(cost >= triplecoupon) {
+				cost = cost-triplecoupon;
+			}else{
+				cost = triplecoupon-cost;
+			}
 		int balance = (int)(amount-cost*(1-discount));
-		System.out.println("會員: " + name+ membershiptiers + "\t" + "購物金： " + amount+"\t"+"花費： "+cost+"\t"+"餘額： "+(balance+triplecoupon));
+		System.out.println("會員: " + name+ membershiptiers + "\t" + "購物金： " + amount+"\t"+"花費： "+cost+"\t"+"餘額： "+balance);
 	}
 	@Override
 	public void print2(){
