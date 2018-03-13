@@ -2,8 +2,8 @@ package com.java2.object;
 
 public class GeneralMember extends BookMember {
 
-	public GeneralMember(String name, String membershiptiers, int amount, int cost, float discount,String email,String phonenumber,String address) {
-		super(name, membershiptiers, amount, cost, discount,email,phonenumber,address);
+	public GeneralMember(String name, String membershiptiers, int amount, int cost, float discount,String email,String phonenumber,String address,String productname) {
+		super(name, membershiptiers, amount, cost, discount,email,phonenumber,address,productname);
 		super.discount = 0.2f;
 	}
 	
@@ -19,6 +19,10 @@ public class GeneralMember extends BookMember {
 		address = "台北市";
 	System.out.println("會員信箱: " + email +"\t"+" 手機號碼: "+phonenumber+ "\t" + "運送地址： "+address+"\n");
 }
+	@Override
+	public void print3(){
+		System.out.println("購買商品: "+ productname);
+	}
 
 	
 }
