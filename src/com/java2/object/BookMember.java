@@ -10,10 +10,8 @@ public class BookMember {
 	protected String email;
 	protected String phonenumber;
 	protected String address;
-	String productname;
-	
-	public BookMember( String name,String membershiptiers,int amount,int cost,float discount,String email,String phonenumber,String address,String productname
-	) {
+
+	public BookMember( String name,String membershiptiers,int amount,int cost,float discount,String email,String phonenumber,String address) {
 		this.name = name;
 		this.membershiptiers = membershiptiers;
 		this.amount = amount;
@@ -22,8 +20,6 @@ public class BookMember {
 		this.email = email;
 		this.phonenumber = phonenumber;
 		this.address = address;
-		this.productname = productname;
-		
 	}
 	
 	public void print1(){
@@ -33,9 +29,7 @@ public class BookMember {
 	public void print2(){
 		System.out.println("會員信箱: " + email +"\t"+"手機號碼: "+phonenumber+ "\t" + "運送地址： "+address);
 	}
-	public void print3(){
-		System.out.println("購買商品: "+ productname);
-	}
+
 
 	
 }
