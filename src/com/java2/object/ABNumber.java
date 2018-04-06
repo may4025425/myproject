@@ -5,7 +5,7 @@ public class ABNumber {
 	public ABNumber( String number) {
 		this.number = number;
 	}
-	//validate 只是用來表達驗證,可自己改
+	//validate 只是用來表達驗證,可自己改別的名稱
 	public int validate(String secret) {
 		int result = 0;
 		int length = secret.length();

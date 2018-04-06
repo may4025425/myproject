@@ -18,11 +18,11 @@ public class ABGame {
 			b = 0;
 		System.out.print("Please enter your guess:");
 		String nums = scanner.nextLine();
-		int length = secret.length();
+		//int length = secret.length();
 		/*下面那一行：拿nums去和secret比較，把nums當外迴圈*/
 		for(int i=0; i<nums.length(); i++) {
 			char c = nums.charAt(i);
-			for(int j=0; j<length;j++) {
+			for(int j=0; j<secret.length();j++) {
 				if(c == secret.charAt(j)) {
 					if(i == j) {
 						a++;

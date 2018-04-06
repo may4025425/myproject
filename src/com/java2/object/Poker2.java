@@ -11,7 +11,7 @@ public class Poker2 {
 	public Poker2() {
 				for (int i = 0; i <= 52; i++) {
 				cards.add(i);
-				}
+			}
 	}	
 	public void shuffle(){
 				for(int i=0 ;i<=52;i++){
@@ -19,12 +19,12 @@ public class Poker2 {
 					cards.set(i, j);	
 				}
 			}
-	public void print() {
+	public void show() {
 				for (int i=0;i<=52;i++) {
 					int c= cards.get(i);
-					System.out.print((c % 13) + 1 + "" + (flowers.charAt(c / 13)));
+					System.out.print((c % 13) + 1 + "" + (flowers.charAt(c / 13)+" "));
 					if(i%13 == 0){
-					System.out.println(" ");	
+					System.out.println();	
 					}
 				}
 			}
