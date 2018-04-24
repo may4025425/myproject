@@ -6,6 +6,23 @@ public class PokerGame {
 
 	public static void main(String[] args) {
 		Random random = new Random();
+		String flowers =	"SHDC";//桃花s愛心h方塊d梅花c
+		int [] cards = new int[52];
+		for(int i=0;i<cards.length;i++) {
+			cards[i] = i ;
+			System.out.println((i%13)+1+""+(flowers.charAt(i/13)));//照順序印出花色和撲克牌
+		}
+		for(int i=0;i<cards.length;i++) {
+			int r = random.nextInt(52);
+			int temp = cards[i];
+			cards[i] = cards[r];
+			cards[r] = temp;
+		}
+		for(int i=0;i<cards.length;i++) {
+			int c = cards[i];
+			System.out.println((c%13)+1+""+(flowers.charAt(c/13)));
+		}
+		/*Random random = new Random();
 		String flowers = "SHDC";
 		int [] cards = new int[52];
 		for (int i = 0;i<cards.length; i++) {
@@ -23,7 +40,7 @@ public class PokerGame {
 		for (int i=0;i<cards.length;i++) {
 			int c = cards[i];
 			System.out.println((c%13)+1+""+(flowers.charAt(c/13)));
-		}
+		}*/
 	}
 
 }
